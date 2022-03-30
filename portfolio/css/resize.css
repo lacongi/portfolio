@@ -1,0 +1,278 @@
+@charset "utf-8";
+/*
+##Device = 랩탑, 데스크탑
+*/
+@media (max-width: 1280px) {
+    .about .process-cont .process-bar {
+        width: 80vw;
+    }
+    .about .process-list {width:90%;height:60vh;}
+    .about .process-cont .process-list .process-item h3 {
+        font-size: 35px;
+    }
+    .about .intro-cont {margin:-50px 0 50px;}
+    .about .intro-cont h1 {
+        width:300%;
+        height:100%;
+        font-size:100px;
+    }
+    .about .about-cont {height:100%;}
+    .about-cont .profile-txt {
+        display:block;
+        padding:0 3vw;
+    }
+    .border-wrap {
+        position: unset;
+        transform: unset;
+    }
+    .border-wrap .back-cc {
+        width: 50vw;
+        height: 50vw;
+    }
+    .about-img {
+        padding:20px;
+        position:absolute;
+        right:3vw;
+        top:0;
+    }
+    .detail-box {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    .about .detail-box .txt-cont:first-of-type {margin-bottom:0;}
+    .contact-txt li {
+        font-size: 40px;
+    }
+}
+
+/*
+##Device = 태블릿, 아이패드
+*/
+@media  (max-width: 1024px) {
+    .about .process-list {height: 60vh;}
+    .about .process-cont .process-bar {
+        transform:translate(-50%,-50%) rotate(90deg);
+        width:60vh;
+    }
+    .about .process-cont .process-list li:nth-child(2) {
+        bottom: unset;
+        right: unset;
+        top:50%;
+        left:0;
+    }
+    .about .process-cont .process-list li:nth-child(3) {
+        top: 25%;
+        left: unset;
+        right:0;
+        text-align:right;
+    }  
+    .about .process-cont .process-list li:nth-child(4) {  
+        text-align:right;
+    }
+    .about .intro-cont h1 {width:200%;font-size:70px;}
+    .about .detail-box .txt-cont:first-of-type ul {display:flex;}
+    .about .detail-box .txt-cont:first-of-type ul  li:first-child {margin-right:30px;}
+    .about .process-cont .process-list li:nth-child(2) {
+        -webkit-transition-delay: 2s;
+        -o-transition-delay: 2s;
+        transition-delay: 2s;
+    }
+    .about .process-cont .process-list li:nth-child(3) {
+        -webkit-transition-delay: 1s;
+        -o-transition-delay: 1s;
+        transition-delay: 1s;
+    }
+
+    .about .process-cont .process-list .process-item.a .pro-line {
+        top:50%; right:-20%;transform:rotate(-90deg) translateY(-50%);
+    }
+    .about .process-cont .process-list .process-item.b .pro-line {
+        bottom:unset;left:unset;top:50%;right:-10%;transform:rotate(90deg) translateY(-50%);
+    }
+    .about .process-cont .process-list .process-item.c .pro-line {
+        top:50%;right:unset;left:-20%;transform:rotate(90deg) translateY(-50%);
+    }
+    .about .process-cont .process-list .process-item.d .pro-line {
+        top:50%;right:unset;left:-10%;transform:rotate(-90deg) translateY(-50%);
+    }
+}
+
+
+/*
+##Device = 태블릿, 모바일
+*/
+@media (max-width: 768px) {
+    .cursor {display: none;}
+    * {
+        cursor:auto;
+    }
+    .wrap {
+        padding: 20px;
+    }
+    .main article ul li {
+        font-size:40px;
+    }
+    .about .process-cont .process-list .process-item {
+        width:250px;
+    }
+    .about .process-cont .process-list .process-item h3 {
+        font-size:25px;
+    }
+    .about .process-cont .process-list .process-item p {
+        font-size:16px;
+    }
+    .about .process-cont .process-list .process-item.a .pro-line {
+        top:0;right:0;transform:rotate(-90deg);
+    }
+    .about .process-cont .process-list .process-item.b .pro-line {
+        top:0;right:0;transform:rotate(90deg);
+    }
+    .about .process-cont .process-list .process-item.c .pro-line {
+        top:0;left:0;transform:rotate(90deg);
+    }
+    .about .process-cont .process-list .process-item.d .pro-line {
+        top:0;left:0;transform:rotate(-90deg);
+    }
+    .detail-box {display:block;}
+    .about .detail-box .txt-cont {margin-bottom:30px;} 
+    .about .detail-box .txt-cont:first-of-type ul li:first-child {
+        margin-right:50px;
+    }
+    .contact .cc-box {
+        top:15%;
+        left:50%;
+        transform:translateX(-50%);
+    }
+    .contact .bg-cc {
+        width:40vw;
+        height:40vw
+    }
+    .contact .bg-cc::after {
+        width:50px;
+        height:50px;
+    }
+    .contact-txt {
+        right:50%;
+        top:60%;
+        transform:translateX(50%);
+        text-align:center;
+    }
+    .contact-txt li {
+        font-size:30px;
+    }
+
+}
+
+/*
+##Device =  스마트폰  
+*/
+@media (max-width: 640px) {
+    header .gnb_nav ul {display:none;}
+    header .ham {display:block;}
+    header .gnb_nav .logo img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+    }
+    .main article ul li {
+        font-size:30px;
+    }
+    .about .process-cont {
+        height:80vh;
+    }
+    .about .process-cont .process-bar {
+        width:80vw;
+        height:30px;
+    }
+    .about .process-list {
+        height:50vh;
+    }
+    .about .process-cont .process-list .process-item {
+        width:180px;
+    }
+    .about .process-cont .process-list .process-item h3 {
+        font-size:18px;
+    }
+    .about .process-cont .process-list .process-item p {
+        font-size:14px;
+    }
+    .about .process-cont .process-bar .cc-cont {
+        width:30px;
+    }
+    .about .process-cont .process-bar .cc-cont .mini-cc {
+        left:-20%;
+    }
+    .about .intro-cont h1 {font-size:50px;}
+    .about-img {
+        padding:0 20px;
+    }
+    .about-img img {
+        width:150px;
+    }
+    .about .detail-box .txt-cont:first-of-type ul {
+        display:block;
+    }
+    .contact .bg-cc {
+        width:55vw;
+        height:55vw;
+    }
+}
+/*
+##Device =  스마트폰  
+*/
+@media (max-width: 480px) {
+    .about .process-cont {height:100vh;}
+    .about .process-cont .process-bar  {
+        transform:translateY(-50%) rotate(90deg);
+        left:unset;
+        right:-40%;
+        width : 65vh;
+    }
+    .about .process-list {height:63vh;}
+    .about .process-cont .process-list li:nth-child(3) {
+        left:0;
+        right:unset;
+        text-align:left;
+    }
+    .about .process-cont .process-list .process-item.c .pro-line {
+        left:unset;
+        right:0;
+        transform: rotate(-90deg);
+    }
+    .about .process-cont .process-list li:nth-child(4) {
+        text-align:left;
+        top:75%;
+        left:0;
+        right:unset;
+    }
+    .about .process-cont .process-list .process-item.d .pro-line {
+        left:unset;
+        right:0;
+        transform: rotate(90deg);
+    }
+    .about .intro-cont h1 {font-size:30px;}
+    .about-box p {font-size:15px;}
+    .about-img img {width:100px;}
+    .about .txt-cont h3 {font-size:30px;}
+    .about .detail-box .txt-cont:first-of-type ul li:first-child {margin-right:0;}
+    .about .txt-box h5 {font-size:20px;}
+    .about .txt-box:last-of-type h5 {font-size:18px;}
+    .about .txt-box p:first-of-type {font-size:13px;}
+    .about .txt-box p:last-of-type {font-size:15px;}
+
+    .contact .bg-cc {width:70vw;height:70vw;}
+    .contact .bg-cc::after {width:30px; height:30px;right:-15px;}
+    .contact-txt li {font-size:20px;}
+    .copy p {font-size:12px;}
+}
+
+/*
+##Device =  스마트폰  
+*/
+@media (max-width: 300px) {
+    .about .process-cont .process-bar {right:-60%;}
+    .about-box .title h3 {font-size:35px;}
+    .about-box .title h5 {font-size:20px;}
+    .contact .bg-cc {width:80vw;height:80vw;}
+}
